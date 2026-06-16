@@ -7,11 +7,10 @@ import re
 
 regex = r"^S(?=.*[0-5])(?=.* )[a-zA-Z0-9 ]*R$"
 
-#testiramo regex
 test_primjer = ["S3 R", "S tekst R", "S4R"]
 
 for primjer in test_primjer:
     if re.match(regex, primjer):
-        print(f"'{primjer}' -> Prolazi!")
+        print("'" + primjer + "' -> Prolazi!")
     else:
-        print(f"'{primjer}' -> NE prolazi.")
+        print("'" + primjer + "' -> NE prolazi.")
